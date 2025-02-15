@@ -6,7 +6,7 @@ const configSchema = z.object({
   DISCORD_TOKEN: z.string(),
   DISCORD_CLIENT_ID: z.string(),
 
-  GOOGLE_DOCS_API_KEY: z.string(),
+  // GOOGLE_DOCS_API_KEY: z.string(),
 
   OPENAI_API_KEY: z.string(),
   OPENAI_BASE_URL: z.string().optional(),

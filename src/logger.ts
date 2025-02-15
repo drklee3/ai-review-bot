@@ -7,4 +7,5 @@ const logger = pino({
     target: "pino-pretty",
   },
 });
+
 export default logger;

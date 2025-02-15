@@ -29,8 +29,8 @@ function buildCommands(
 async function main() {
   const config = getConfigFromEnv();
 
-  // Update logger level from config
-  logger.info("Setting log level to", config.LOG_LEVEL);
+  // Update log level from config
+  logger.info(`Setting log level to ${config.LOG_LEVEL}`);
   logger.level = config.LOG_LEVEL;
 
   const client = new Client({

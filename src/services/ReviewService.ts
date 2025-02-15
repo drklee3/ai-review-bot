@@ -7,6 +7,9 @@ import type {
   ChatCompletion,
   ChatCompletionCreateParamsNonStreaming,
 } from "openai/resources/chat/completions";
+import baseLogger from "../logger";
+
+const logger = baseLogger.child({ module: "ReviewService" });
 
 // Match expected OpenAI client interface with only the methods we use in the
 // ReviewService. We don't need streaming, as we need the full response to be
@@ -56,6 +59,8 @@ class ReviewService {
         },
       ],
     });
+
+    logger.debug({ response }, "OpenAI response");
 
     if (response.choices.length === 0) {
       throw new Error("No choices in response from OpenAI");

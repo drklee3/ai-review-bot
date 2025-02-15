@@ -22,9 +22,25 @@ Configuration is set with environment variables. All are required, except for
 LOG_LEVEL=debug
 DISCORD_TOKEN=xxx
 DISCORD_CLIENT_ID=xxx
-GOOGLE_DOCS_API_KEY=xxx
 OPENAI_API_KEY=xx
-OPENAI_BASE_URL=xx
+OPENAI_BASE_URL=https://api.openai.com/v1
 OPENAI_MODEL=gpt-4o
-SYSTEM_PROMPT=xxx
+SYSTEM_PROMPT="
+Multi-line system prompts
+can
+go
+here
+"
+```
+
+## Development
+
+Install [Bun](https://bun.sh/).
+
+```bash
+# Install dependencies
+bun install
+
+# Start the bot
+bun dev
 ```
