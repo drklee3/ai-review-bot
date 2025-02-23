@@ -1,17 +1,15 @@
-# Writer AI Review Bot
+# AI Document Review Bot
 
-Outgoing webhooks based Discord bot to review technical writing eLearning
-scripts from Google Docs, using an OpenAI compatible model.
+Discord bot to review uploaded documents with an OpenAI compatible model.
 
 ## Commands
 
-`/review <google-doc-url>` - Review the Google Doc at the provided URL.
+`/review <file>`
 
 ## Requirements
 
 1. Discord bot token and client ID.
 2. OpenAI compatible API key and base url.
-3. Google docs API key.
 
 ## Configuration
 
